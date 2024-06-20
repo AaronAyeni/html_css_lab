@@ -1,3 +1,19 @@
+header{
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
 .hero{
     display: flex;
     align-items: center;
