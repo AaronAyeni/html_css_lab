@@ -56,3 +56,15 @@ header h1 {
 .hero-content a {
     text-decoration: none;
 }
+
+.products{
+    background-color: #2d2d2d;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+}
