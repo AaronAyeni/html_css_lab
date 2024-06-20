@@ -1,22 +1,58 @@
-header{
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.navbar{
     background-color: #2d2d2d;
     display: flex;
     align-items: center;
 }
 
-header nav {
+.navbar nav {
     width: 15%;
     display: flex;
     justify-content: space-around;
 }
 
+#discount__banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
 
+#discount__banner p {
+  width: 75%;  
+}
 
-
+#discount__banner a {
+    text-decoration: none;
+    color: white !important;
+}
 
 .hero{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 250px;
+    background-image: url(./assets/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero-content a {
+    text-decoration: none;
 }
