@@ -1,9 +1,14 @@
+body {
+    font-family: Kanit, Arial, Helvetica, sans-serif;
+}
+
 header a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 header h1 {
+    color: #ffffff;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -15,9 +20,17 @@ header h1 {
 }
 
 .navbar nav {
-    width: 15%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
+}
+
+.search-bar-container {
+    width: 80%;
+}
+
+#nav-search-bar{
+    width: 80%;
 }
 
 #discount__banner{
@@ -26,7 +39,7 @@ header h1 {
     justify-content: space-around;
     text-align: center;
     background-color: black;
-    color: white;
+    color: #ffffff;
 }
 
 #discount__banner p {
@@ -35,14 +48,14 @@ header h1 {
 
 #discount__banner a {
     text-decoration: none;
-    color: white !important;
+    color: #ffffff !important;
 }
 
 .hero{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    height: 500px;
     background-image: url(./assets/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -50,21 +63,88 @@ header h1 {
 
 .hero-content {
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
-.hero-content a {
+.hero-content h2 {
+    font-size: 64px;
+}
+
+.button-link {
     text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    border: 2px solid white;
 }
 
 .products{
-    background-color: #2d2d2d;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 5%;
+}
+
+.products-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dddddd;
 }
 
 .card img {
     width: 200px;
-    height: auto;
+    height: 200px;
+}
+
+.sign-up {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    padding: 7.5%;
+}
+
+.sign-up-form * {
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dddddd;
+    font-size: small;
+    padding: 5px;
+    color: #2d2d2d !important;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+  
+@media only screen and (max-width: 860px){
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav * {
+        padding: 2%;
+    }
+    
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+    
 }
